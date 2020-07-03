@@ -9,6 +9,11 @@ public class BookApp {
         //Create Book
         Book lordOfTheRings = new Book("Lord Of The Rings", jRRTolkien, 49);
 
+        lordOfTheRings.setPrice(39);
+        jRRTolkien.setEmail("fantasywriterke1892@yahoo.com");
+
+        System.out.println(jRRTolkien.getGender());
+
         // print author with al its parameters
         System.out.println(jRRTolkien.toString());
 
