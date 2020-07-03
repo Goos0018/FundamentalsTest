@@ -1,3 +1,8 @@
+#Theorie vraag 11
+## A. ClassA varA = new ClassA();
+## B. ClassA varA = new ClassB();
+#
+#
 #Fundamentals Test
 
 ##1 STRINGS
