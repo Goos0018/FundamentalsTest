@@ -20,6 +20,12 @@ public class SavingsAccount extends Account {
         }
     }
 
+    public void annualIntrest(){
+        double thisYearsIntrest = this.savingsMoney * getIntrest();
+        this.savingsMoney += this.savingsMoney * getIntrest();
+        System.out.println("Your savingsaccount generated " + thisYearsIntrest + " of intrest this year, your total amount of your savingsaccount is now " + this.savingsMoney);
+    }
+
     public CurrentAccount getCurrentAccount() {
         return currentAccount;
     }
