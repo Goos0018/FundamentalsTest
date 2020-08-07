@@ -36,6 +36,9 @@ public class Author {
         this.gender = gender;
     }
 
+    /**
+     * interessante oplossing! Extra punt voor creativiteit.
+     */
     public enum Gender {M, V, X}
 
     @Override

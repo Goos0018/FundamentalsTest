@@ -10,6 +10,13 @@ public class SavingsAccount extends Account {
         this.savingsMoney = savingsMoney;
     }
 
+    /**
+     * This method takes sender and receiver into account, so it's not really a method specific to SavingsAccount.
+     * In this configuration it shouldn't be in SavingsAccount class, rather in Account.
+     * Or a transfer method in savingsaccount should just transfer money from the savings to the corresponding
+     * current account.
+     * You have the corresponding current account declared as a member here in savingsaccount!
+     */
     public void transferMoney(Account accountfrom, Account accountTo, double amount) {
         if (accountfrom instanceof CurrentAccount) {
             this.currentAccount.setCurrentMoney(this.currentAccount.getCurrentMoney() - amount);

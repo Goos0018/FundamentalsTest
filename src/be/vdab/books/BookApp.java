@@ -10,7 +10,7 @@ public class BookApp {
         Book lordOfTheRings = new Book("Lord Of The Rings", jRRTolkien, 49);
 
         lordOfTheRings.setPrice(39);
-        jRRTolkien.setEmail("fantasywriterke1892@yahoo.com");
+        jRRTolkien.setEmail("fantasywriterke1892@yahoo.com"); // thanks for the laugh
 
         System.out.println(jRRTolkien.getGender());
 

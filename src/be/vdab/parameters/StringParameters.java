@@ -12,6 +12,9 @@ public class StringParameters {
 
         //pass every char in original nospacestring backwards en paste that char in reverse forward.
         for (int i = length - 1; i >= 0; i--)
+        /**
+         * reverse.append(stringNoSpaces.charAt(i)) would be more elegant.
+         */
             reverse = reverse + stringNoSpaces.charAt(i);
 
         //check if original en reverse are identical or not
@@ -24,6 +27,9 @@ public class StringParameters {
 
 
     public static void isURL(String string) {
+        /**
+         * variabel names can be more descriptive. 'string' and 'newString' are confusing.
+         */
         int count = 0;
         String newString = string.toLowerCase();
         // if string is chorter than 6, its definitly not a URL

@@ -4,9 +4,18 @@ public class RandomObject {
     public static void main(String[] args) {
 
         //create array with 25 indexes
+        /**
+         * Liefst arrays in java-stijl declareren:
+         * int[] randomnumber = new int[25];
+         */
         int randomNumber[] = new int[25];
         //fill every array with random number between 0 and 1000
         for (int i = 0; i < 25; i++) {
+            /**
+             * Reden voor gebruik van Math.ceil() onduidelijk en tevens overbodig.
+             * Test het maar eens uit zonder ceil, werkt perfect.
+             * Casten naar een (int) zal alles na de komma sowieso weggooien.
+             */
             randomNumber[i] = (int) Math.ceil(Math.random() * 1000);
         }
 
